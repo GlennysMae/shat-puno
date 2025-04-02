@@ -3,12 +3,42 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: magenta;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.demo8.HelloController">
+<VBox alignment="CENTER" prefHeight="388.0" prefWidth="367.0" spacing="20.0" style="-fx-background-color: magenta;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo8.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+   <Label prefHeight="31.0" prefWidth="84.0" text="Login" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="31.0" />
+      </font>
+   </Label>
+   <Label text="Please enter your Login and your Password" textFill="#fff6f6">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+   <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="230.0" text="Username or E-mail">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Button>
+   <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="227.0" text="Password">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Button>
+   <Button mnemonicParsing="false" style="-fx-background-color: magenta;" text="Forgot Password?">
+      <VBox.margin>
+         <Insets left="123.0" top="-16.0" />
+      </VBox.margin></Button>
+   <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="219.0" text="Login">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Button>
+   <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="218.0" text="Or sign-in with Google">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Button>
+    <Button onAction="#onHelloButtonClick" style="-fx-background-color: magenta;" text="Not a member yet? Register " />
 
     <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" text="Hello!" />
 </VBox>
